@@ -1,30 +1,21 @@
 """
     Rules:
-        - 6 Decks.
+        - Decks can vary according the number to simulate.
         - All shuffled together.
         - Cut card -> Leaves a small part of the Deck not to be used (Assume 15-20%).
-        - Dealer deals cards till the cut cart:
+        - Dealer deals cards till the cut card:
             * Player gets its first card.
             * Dealer gets its first card -> FACE UP.
             * Player gets its second card.
             * Dealer gets its second card -> FACE DOWN
         - Once reached the cut card, all the 6 decks are re-shuffled.
-        - The dealer MUST STAND on soft 17 (Ace + 6, e.g.).
+        - The dealer MUST STAND on a fix value given as an argument.
         - The shuffling is done once and played to the cut-card (Not continuous shuffling).
         - BlackJack pays 3:2
         - Double after splitting (DAS) is allowed.
         - Split Aces is allowed.
         - Player can double any 2 cards.
         - Card counting not allowed (well, not simulated at least...).
-    Objectives:
-        - Implementing Monte-Carlo simulation and calculate the results:
-            * Casino edges, winning games, appearace of each card...
-            * 1,000,000,000 games using a single random seed is considered as a single run.
-            * 100 simulations with different random seeds will be used to calculate final metrics with its errors.
-        - Gives another option for the user to test strategies -> Should I stand 16 against dealer's 10? (e.g.)
-            * User has to indicate its hand and dealer's card.
-            * The same simulation will be run to give the final results so that the user can make his own conclusion.
-        - (Maybe) Simply a CLI for playing blackjack...
 """
 ###################################################################################################################################
 # Import modules
