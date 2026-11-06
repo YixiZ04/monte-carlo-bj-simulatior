@@ -55,10 +55,9 @@ class Main:
 
     def simulate_all_cases(self):
         """
-            Simulates the best strategy for the combination of:
+            Simulates all cases for the combination of:
                 * Dealer Must-Hit: (16, 17, 18)
                 * Deck Number: (1,4,6,8)
-            And also once passive strategy for dealer must-hit = 17 and deck number = 6 (The defined rules)
         """
         self.simulate_best_strategy()
         self.simulate_passive_strategy()
